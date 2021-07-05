@@ -34,9 +34,9 @@ int main(){
     int r,c;
     cin>>r>>c;
     vector<vector<int>> ans=matrixReshape(mat,r,c);
-    for(int i=0;i<r;i++)
+    for(int i=0;i<ans.size();i++)
     {
-        for(int j=0;j<c;j++)
+        for(int j=0;j<ans[0].size();j++)
             cout<<ans[i][j]<<" ";
         cout<<endl;
     }
